@@ -1,0 +1,301 @@
+/* App.css */
+
+.App {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Sidebar and main content */
+    grid-template-rows: auto 1fr auto; /* Header, main content, footer */
+    grid-template-areas:"sidebar main";
+    min-height: 100vh; /* Minimum height of the viewport */
+    position: relative;
+  }
+  
+  .clientsidebar {
+    grid-area: sidebar;
+    background-color: #555;
+    color: #fff;
+   
+    height: 100vh;
+  }
+  
+  
+  
+  .clientmain {
+    grid-area: main;
+  
+    height: 100vh;
+  }
+  
+  
+
+
+  .client-dashboard {
+    display: grid;
+    border: 2px solid red;
+    gap: 5px;
+    grid-template-columns: 0.9fr 3fr 1.4fr;
+    grid-template-rows: 95vh;
+    
+}
+/*  */
+.one {
+    border: 1px solid blue;
+  
+}
+
+
+/*  */
+.middle-container {
+    border: 1px solid green;
+    height: 100vh;
+}
+
+.middle-container-tittle {
+    /* text-align: center; */
+    font-family: sans-serif, Source Sans Pro;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+/* .dashbord-organizers {
+    display: flex;
+    justify-content: space-between;
+} */
+
+  
+.organizer-dashboard p {
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.see-all p {
+    margin-right: 20px;
+    color: #1976d3;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.all-organizers {
+    display: flex;
+    flex-direction: column;
+}
+
+.organizer-client {
+    height: 30px;
+    padding: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 1px solid #00000000;
+    border-width: 1px;
+    border-bottom: 2px solid #e2e8f0;
+    background: #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #0f172a;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+.organizer-icon{
+    color: rgb(255, 142, 0);
+     margin-top: 10px;
+    font-size: 23px;
+    display: flex;
+ 
+}
+
+.organizer-icon p{
+    color:#697991;
+    font-size: 14px;
+    font-weight: 400;
+    /* margin-bottom: 40px; */
+    margin: 0 auto;
+    margin-left: 8px;
+}
+.complete p {color:#1976d3; }
+
+.dashboard-billing{
+    font-family: sans-serif, Source Sans Pro;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.dashboard-pay-invoice {
+    height: 30px;
+    padding: 25px;
+    /* margin-top: 20px; */
+    cursor: pointer;
+    /* border: 1px solid #00000000; */
+    border-width: 1px;
+    border-bottom: 2px solid #e2e8f0;
+    background: #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #0f172a;
+    margin-right: 20px;
+    /* border: 1px solid red; */
+}
+
+.client_Pay_invoice label{
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.dashbord-invoice-icon{
+    color: rgb(36, 200, 117);
+     margin-top: 10px;
+    font-size: 23px;
+    display: flex;
+ 
+}
+
+.dashbord-invoice-icon p{
+    color:#697991;
+    font-size: 14px;
+    font-weight: 400;
+    /* margin-bottom: 40px; */
+    margin: 0 auto;
+    margin-left: 8px;
+}
+
+/*  */
+.right {
+    border: 1px solid black;
+
+}
+
+.quik-links {
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px
+}
+
+.dashboard-folder-temp{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 16px;
+}
+
+
+.dashboard-upload-documents{
+    display: flex;
+    align-items: center;
+    color: #1976d3;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.dashboard-upload-folder{
+    display: flex;
+    align-items: center;
+    color: #1976d3;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.dashboard-new-chat{
+    display: flex;
+    align-items: center;
+    color: #1976d3;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 170px
+}
+
+.balance{
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.Credits_Balance{
+    display: flex;
+    flex-direction: row;
+}
+.Credits_available {
+    display: flex;
+    flex-direction: column;
+}
+.Credits_available h2{
+    color: #697991;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+}
+.Credits_available p{
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.Outstanding_Balance{
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+
+}
+.Outstanding_Balance h2{
+    color: #697991;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+   
+
+}
+.Outstanding_Balance p{
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.dashboard-contact-info{
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.dashboard-contact-info-tittle h2 {
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* .Credits_Balance{
+    display: flex;
+    flex-direction: row;
+}
+.Credits_available h2{
+    color: #697991;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+}
+.Credits_available{
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+border: 1px solid red;}
+  
+
+
+.Outstanding_Balance h2{
+    color: #697991;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+} */

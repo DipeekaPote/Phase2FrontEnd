@@ -1,0 +1,41 @@
+.table {
+    border-collapse: collapse;
+    border-radius: 10px; /* Adjust the border radius as needed */
+    overflow: hidden; /* This ensures the border-radius is applied properly */
+    
+}
+
+.table th,
+.table td {
+    border: none;
+    padding: 12px; /* Increase padding to increase row height */
+    line-height: 1.5; /* Adjust line height as needed */
+    font-size: 11px; /* Increase font size as needed */
+ 
+}
+
+.table thead th {
+    background-color: #f2f2f2; /* Adjust background color as needed */
+    color: black; /* Make header text black */
+    font-size: 14px; /* Increase font size for header text as needed */
+    border-bottom: 1px solid rgb(201, 196, 196); /* Add line below the header */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Adjust even row background color as needed */
+}
+
+
+.circle {
+    width: 25px; /* Adjust circle width */
+    height: 25px; /* Adjust circle height */
+    border-radius: 50%; /* Create a circle */
+    background-color: #007bff; /* Adjust circle background color */
+    color: white; /* Adjust text color */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 5px; /* Adjust margin between circle and name */
+    font-size: 10px;
+}
